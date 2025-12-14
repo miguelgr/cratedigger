@@ -1,0 +1,115 @@
+/* Discogs Input UI */
+#discogs-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#discogs-form {
+    background: #222;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 90%;
+}
+
+#discogs-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#discogs-username {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    /* color: #333; */
+}
+
+.discogs-btn {
+    background: #e14e4e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.2s;
+}
+
+.discogs-btn:hover {
+    background: #ff6b6b;
+}
+
+#discogs-trigger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 90;
+    background: #e14e4e;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#discogs-trigger img {
+    height: 20px;
+    width: 20px;
+    filter: invert(1);
+    /* Make black icon white */
+}
+
+#discogs-trigger:hover {
+    background: #ff6b6b;
+}
+
+#discogs-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    color: #aaa;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#discogs-close:hover {
+    color: #fff;
+}
+
+#discogs-lists {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.hidden {
+    display: none !important;
+}
